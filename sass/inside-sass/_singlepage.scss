@@ -226,12 +226,13 @@
 			border: none;
 			color: $white-color;
 			border-radius: 1rem;
-			background-color: $gray-color;
-			transition: background-color .3s ease-in-out;
+			background-image: url(../img/portfolio/portfolio-2.jpg);
+			background-size: cover;
+			background-position: center;
+			filter: grayscale(100%) !important;
+			transition: all .3s ease-out;
 			&:hover {
-				color: $white-color;
-				background: $red-color;
-				// transform: scale(1.0) !important;
+				filter: grayscale(0%) !important;
 			}
 			i {
 				color: $white-color;
@@ -243,6 +244,7 @@
 			}
 			.card-text {
 				line-height: 1.8rem;
+				text-shadow: 20px 0px 10px 2px rgba($color: #000000, $alpha: 1.0) !important;
 			}
 		}
 	}
